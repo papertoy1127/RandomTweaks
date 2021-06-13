@@ -1,0 +1,8 @@
+﻿{
+  "Id": "RandomTweaksPlayingModule",
+  "DisplayName": "RandomTweaks Playing Module",
+  "Author": "PAPER: PPT_",
+  "Version": "1.3.0",
+  "AssemblyName": "RandomTweaksPlayingModule.dll",
+  "EntryMethod": "RandomTweaksPlayingModule.Startup.Load"
+}

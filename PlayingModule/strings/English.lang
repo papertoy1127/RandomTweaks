@@ -1,0 +1,3 @@
+RandomTweaksPlayingModule.Settings.DisableRestartAtCheckpoint: Disable Restart at Checkpoint
+RandomTweaksPlayingModule.Settings.PlayCLSInEditor: Enable Playing CLS in Editor (Ctrl+Shift+P)
+RandomTweaksPlayingModule.Settings.EnableOverloadGauge: Enable Overload Gauge

@@ -1,0 +1,6 @@
+UI.ChangeFont: Change Font
+UI.Fontname: Font Name
+UI.Fontsize: Font Size
+UI.Linespacing: Font Line Spacing
+UI.Fallback: Fallback Font
+UI.PrimaryFont: Main Font

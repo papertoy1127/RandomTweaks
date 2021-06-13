@@ -1,0 +1,12 @@
+UI.HelpSilverPlanet: Silver Planet???
+RandomTweaksMiscModule.Settings.DisableGoldPlanetParticle: Disable Gold/Silver Planet Particles
+RandomTweaksMiscModule.Settings.EnableCustomTexture: Enable Custom Texture
+RandomTweaksMiscModule.Settings.FindImage: Find Image...
+RandomTweaksMiscModule.Settings.Scale: Scale
+RandomTweaksMiscModule.Settings.ChangeSprite: Change Texture
+RandomTweaksMiscModule.Settings.NeedsRestart: <color=#333333> (Needs Restart)</color>
+Dialog.ImageFile: Image File
+Dialog.ImageDialog: Custom Texture Image
+RandomTweaksMiscModule.Settings.FindRedImage: Fire Planet
+RandomTweaksMiscModule.Settings.FindBlueImage: Ice Planet
+RandomTweaksMiscModule.Settings.Particle: Particle Type

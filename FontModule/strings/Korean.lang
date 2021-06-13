@@ -1,0 +1,6 @@
+UI.ChangeFont: 글꼴 변경
+UI.Fontname: 글꼴 이름
+UI.Fontsize: 글꼴 크기
+UI.Linespacing: 글꼴 줄 간격
+UI.Fallback: 폴백 글꼴
+UI.PrimaryFont: 주 글꼴

@@ -1,0 +1,8 @@
+﻿{
+  "Id": "RandomTweaks",
+  "DisplayName": "RandomTweaks",
+  "Author": "PAPER: PPT_",
+  "Version": "1.1.3",
+  "AssemblyName": "RandomTweaks.dll",
+  "EntryMethod": "RandomTweaks.Startup.Load"
+}

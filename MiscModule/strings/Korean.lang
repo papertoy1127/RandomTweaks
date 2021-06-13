@@ -1,0 +1,12 @@
+UI.HelpSilverPlanet: 은색 행성???
+RandomTweaksMiscModule.Settings.DisableGoldPlanetParticle: 금/은색 행성 파티클 비활성화
+RandomTweaksMiscModule.Settings.EnableCustomTexture: 커스텀 텍스처 활성화
+RandomTweaksMiscModule.Settings.NeedsRestart: <color=#333333> (재시작 필요)</color>
+RandomTweaksMiscModule.Settings.Scale: 텍스처 크기
+RandomTweaksMiscModule.Settings.ChangeSprite: 텍스처 변경
+RandomTweaksMiscModule.Settings.FindImage: 이미지 찾기...
+Dialog.ImageFile: 이미지 파일
+Dialog.ImageDialog: 커스텀 텍스처 이미지
+RandomTweaksMiscModule.Settings.FindRedImage: 불 행성
+RandomTweaksMiscModule.Settings.FindBlueImage: 얼음 행성
+RandomTweaksMiscModule.Settings.Particle: 효과 종류

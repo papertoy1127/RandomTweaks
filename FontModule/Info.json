@@ -1,0 +1,8 @@
+﻿{
+  "Id": "RandomTweaksFontModule",
+  "DisplayName": "RandomTweaks Font Module",
+  "Author": "PAPER: PPT_",
+  "Version": "1.3.0",
+  "AssemblyName": "RandomTweaksFontModule.dll",
+  "EntryMethod": "RandomTweaksFontModule.Startup.Load"
+}
