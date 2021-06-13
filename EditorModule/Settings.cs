@@ -5,7 +5,7 @@ using UnityModManagerNet;
 
 namespace RandomTweaksEditorModule {
 	[Category(TabName = "RandomTweaks",
-		Name = "RandomTweaksMiscModule Editor Module",
+		Name = "RandomTweaks Editor Module",
 		MinVersion = 71,
 		MaxVersion = 71,
 		PatchClass = typeof(Patch.Patch))]
@@ -22,10 +22,10 @@ namespace RandomTweaksEditorModule {
 			var DCTE = EnableDecorationClickToEvent ? "☑" : "☐";
 			EnableDecorationClickMove =
 				GUILayout.Toggle(EnableDecorationClickMove,
-					$"{DCM} " + RandomTweaksEditorModule.Translator.Translate("RandomTweaksMiscModule.Settings.EnableDecorationClickMove"), Text);
+					$"{DCM} " + RandomTweaksEditorModule.Translator.Translate("RandomTweaks.Settings.EnableDecorationClickMove"), Text);
 			EnableDecorationClickToEvent =
 				GUILayout.Toggle(EnableDecorationClickToEvent,
-					$"{DCTE} " + RandomTweaksEditorModule.Translator.Translate("RandomTweaksMiscModule.Settings.EnableDecorationClickToEvent"), Text);
+					$"{DCTE} " + RandomTweaksEditorModule.Translator.Translate("RandomTweaks.Settings.EnableDecorationClickToEvent"), Text);
 
 		}
 	}
