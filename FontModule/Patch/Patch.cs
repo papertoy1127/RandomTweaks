@@ -1,4 +1,6 @@
-﻿using ADOLib.SafeTools;
+﻿using System.Collections;
+using System.Threading;
+using ADOLib.SafeTools;
 using HarmonyLib;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +15,37 @@ namespace RandomTweaksFontModule.Patch {
 				__result = Settings.GetFontData();
 				return false;
 			}
+		}
 
+		public static IEnumerator UpdateFontCo() {
+			if (RandomTweaksFontModule.settings.FontIndex == 0) yield break;
+			var gameObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+			foreach (var i in gameObjects) {
+				foreach (var j in i.GetComponentsInChildren<Text>()) {
+					if (RandomTweaksFontModule.settings.FontIndex == 11)
+						j.SetLocalizedFont();
+					else {
+						FontData fnt = Settings.GetFontData();
+
+						if (j.name == "txtLevelName") {
+							j.font = fnt.font;
+							j.resizeTextMaxSize = Mathf.RoundToInt(fnt.fontScale * 68);
+							j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
+						}
+
+						if (j.name == "txtDescription") {
+							j.resizeTextMaxSize = Mathf.RoundToInt(40 * fnt.fontScale);
+							j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
+						}
+
+						if (j.name.StartsWith("Help")) {
+							j.resizeTextMaxSize = Mathf.RoundToInt(6.4f * fnt.fontScale);
+							j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
+						}
+					}
+				}
+				yield return null;
+			}
 		}
 
 		public static void UpdateFont() {
@@ -21,21 +53,26 @@ namespace RandomTweaksFontModule.Patch {
 			var gameObjects = SceneManager.GetActiveScene().GetRootGameObjects();
 			foreach (var i in gameObjects) {
 				foreach (var j in i.GetComponentsInChildren<Text>()) {
-					FontData fnt = Settings.GetFontData();
-					if (j.name == "txtLevelName") {
-						j.font = fnt.font;
-						j.resizeTextMaxSize = Mathf.RoundToInt(fnt.fontScale * 68);
-						j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
-					}
+					if (RandomTweaksFontModule.settings.FontIndex == 11)
+						j.SetLocalizedFont();
+					else {
+						FontData fnt = Settings.GetFontData();
 
-					if (j.name == "txtDescription") {
-						j.resizeTextMaxSize = Mathf.RoundToInt(40 * fnt.fontScale);
-						j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
-					}
+						if (j.name == "txtLevelName") {
+							j.font = fnt.font;
+							j.resizeTextMaxSize = Mathf.RoundToInt(fnt.fontScale * 68);
+							j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
+						}
 
-					if (j.name.StartsWith("Help")) {
-						j.resizeTextMaxSize = Mathf.RoundToInt(6.4f * fnt.fontScale);
-						j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
+						if (j.name == "txtDescription") {
+							j.resizeTextMaxSize = Mathf.RoundToInt(40 * fnt.fontScale);
+							j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
+						}
+
+						if (j.name.StartsWith("Help")) {
+							j.resizeTextMaxSize = Mathf.RoundToInt(6.4f * fnt.fontScale);
+							j.GetComponent<Text>().lineSpacing = fnt.lineSpacing;
+						}
 					}
 				}
 			}

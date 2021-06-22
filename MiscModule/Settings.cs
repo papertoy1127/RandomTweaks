@@ -19,7 +19,7 @@ namespace RandomTweaksMiscModule {
 		TabName = "RandomTweaks",
 		Name = "RandomTweaks Misc Module",
 		MinVersion = 71,
-		MaxVersion = 74,
+		MaxVersion = 75,
 		PatchClass = typeof(Patch.Patch),
 		ForceType = ForceType.ForceEnable
 	)]

@@ -9,6 +9,7 @@ using HarmonyLib;
 using UnityEngine;
 using UnityModManagerNet;
 using ADOLib.Translation;
+using Object = System.Object;
 
 namespace RandomTweaksFontModule {
 	class RandomTweaksFontModule
@@ -117,6 +118,10 @@ namespace RandomTweaksFontModule {
 			Translator = new Translator(modEntry.Path);
 			
 			settings.harmony.PatchCategory<Settings>();
+
+			var asdf = new GameObject();
+			UnityEngine.Object.DontDestroyOnLoad(asdf);
+			asdf.AddComponent<scrAlways>();
 		}
 	}
 }
