@@ -9,7 +9,9 @@ namespace RandomTweaksPlayingModule {
 	[Category(
 		TabName = "RandomTweaks", 
 		Name = "RandomTweaks Playing Module", 
-		MinVersion = 71)]
+		MinVersion = 71,
+		MaxVersion = 75,
+		PatchClass = typeof(Patch.Patch))]
 	public class Settings : Category {
 
 		public override UnityModManager.ModEntry ModEntry => RandomTweaksPlayingModule.ModEntry;
@@ -34,15 +36,6 @@ namespace RandomTweaksPlayingModule {
 				GUILayout.Toggle(EnableOverloadGauge,
 					$"{EOG} " + RandomTweaksPlayingModule.Translator.Translate(
 						"RandomTweaksPlayingModule.Settings.EnableOverloadGauge"), Text);
-		}
-
-		public override void OnEnable() {
-			RandomTweaksPlayingModule.harmony.UnpatchCategory<Settings>();
-			RandomTweaksPlayingModule.harmony.PatchCategory<Settings>();
-		}
-		
-		public override void OnDisable() {
-			RandomTweaksPlayingModule.harmony.UnpatchCategory<Settings>();
 		}
 	}
 }

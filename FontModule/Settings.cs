@@ -14,6 +14,7 @@ namespace RandomTweaksFontModule {
 		TabName = "RandomTweaks", 
 		Name = "RandomTweaks Font Module", 
 		MinVersion = 71, 
+		MaxVersion = 75,
 		PatchClass = typeof(Patch.Patch),
 		ForceType = ForceType.ForceEnable)]
 	public class Settings : Category {

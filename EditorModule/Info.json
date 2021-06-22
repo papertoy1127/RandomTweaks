@@ -1,8 +1,0 @@
-﻿{
-  "Id": "RandomTweaksEditorModule",
-  "DisplayName": "RandomTweaks Editor Module",
-  "Author": "PAPER: PPT_",
-  "Version": "1.3.0",
-  "AssemblyName": "RandomTweaksEditorModule.dll",
-  "EntryMethod": "RandomTweaksEditorModule.Startup.Load"
-}
